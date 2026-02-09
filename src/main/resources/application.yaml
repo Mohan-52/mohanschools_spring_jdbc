@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: mohan-schools
+
+  datasource:
+    url: ${MYSQL_URL}
+    username: ${MYSQL_USER_NAME}
+    password: ${MYSQL_PASSWORD}
+
+
+
+
+
