@@ -8,6 +8,10 @@ spring:
     password: ${MYSQL_PASSWORD}
 
 
+  jpa:
+    show-sql: true
+
+
 
 
 

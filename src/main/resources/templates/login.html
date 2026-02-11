@@ -47,8 +47,8 @@ Author URL: http://w3layouts.com
             <div class="col-md-6 login-center">
                 <form th:action="@{/login}" method="post" class="signin-form">
                     <div class="col-md-8 login-center input-grids">
-                        <li class="alert alert-danger" role="alert" th:if="${!#strings.isEmpty(errorMessge)}"
-                            th:text="${errorMessge}" />
+                        <li class="alert alert-success" role="alert" th:if="${!#strings.isEmpty(errorMessage)}"
+                            th:text="${errorMessage}" />
                         <input type="text" name="username" id="username" placeholder="Username"
                                class="login-input" />
                         <input type="password" name="password" id="password" placeholder="Password"
@@ -57,7 +57,7 @@ Author URL: http://w3layouts.com
                     </div>
                     <div class="col-md-8 login-center text-start">
                         <button class="btn btn-style btn-style-3 text-left">Log In</button>
-                        <a class="new-user text-right" href="">New User ?</a>
+                        <a th:href="@{/public/register}" class="new-user text-right">New User ?</a>
                     </div>
                 </form>
             </div>
@@ -98,11 +98,11 @@ Author URL: http://w3layouts.com
 <!-- //move top -->
 
 <!-- common jquery plugin -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
 <!-- //common jquery plugin -->
 
 <!-- theme switch js (light and dark)-->
-<script src="assets/js/theme-change.js"></script>
+<script src="/assets/js/theme-change.js"></script>
 <!-- //theme switch js (light and dark)-->
 
 <!-- MENU-JS -->
@@ -145,7 +145,7 @@ Author URL: http://w3layouts.com
 <!-- //disable body scroll which navbar is in active -->
 
 <!-- bootstrap -->
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
 <!-- //bootstrap -->
 <!-- //Js scripts -->
 </body>
